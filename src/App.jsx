@@ -1,6 +1,6 @@
-import React from 'react';
-import Gallery from './Gallery';
+import React, { useState } from 'react';
 import './App.css';
+import Gallery from './Gallery';
 
 function App() {
   return (
@@ -12,3 +12,4 @@ function App() {
 }
 
 export default App;
+

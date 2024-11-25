@@ -5,7 +5,7 @@ function Gallery() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetching data from the API
+  // Fetching data
   useEffect(() => {
     fetch('https://course-api.com/react-tours-project')
       .then((response) => response.json())
@@ -19,7 +19,6 @@ function Gallery() {
       });
   }, []);
 
-  // Handling loading and error states
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 

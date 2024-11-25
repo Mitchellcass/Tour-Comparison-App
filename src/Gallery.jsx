@@ -39,3 +39,9 @@ function Gallery() {
 }
 
 export default Gallery;
+
+const handleRemoveTour = (tourId) => {
+    // eslint-disable-next-line no-undef
+    setTours(tours.filter((tour) => tour.id !== tourId));
+  };
+  
